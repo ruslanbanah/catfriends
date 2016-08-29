@@ -9,8 +9,8 @@
     $urlRouterProvider.otherwise("/user/1/0");
     $stateProvider
         .state('user', {
-          url: "/user/:page/:key",
-          templateUrl: "app/user/user.html",
+          url: "/user/:page/:userIndex",
+          templateUrl: "app/views/user/user.html",
           controller: 'UserCtrl'
         });
   }

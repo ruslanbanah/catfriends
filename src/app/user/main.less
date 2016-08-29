@@ -3,19 +3,35 @@
 @primary-color: #00b9ad;
 @highlight-color: #e4a123;
 
-.btn-control{
-  .btn-prev{
+.logo {
+  margin-top: 20px;
+}
+
+.btn-control {
+  margin: 20px 0;
+
+  .btn-prev {
     float: left;
+    font-size: 24px;
+    color: @primary-color;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration: none;
   }
-  .btn-next{
+  .btn-next {
     float: right;
+    font-size: 24px;
+    color: @primary-color;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration: none;
   }
 }
 
-.profile-list{
+.profile-list {
 
-  .profile-currently{
-    .avatar{
+  .profile-currently {
+    .avatar {
       margin: 0 auto 25px;
       width: 100px;
       height: 100px;
@@ -24,41 +40,42 @@
       background-size: cover;
     }
   }
-  .currently{
-    .title{
+  .currently {
+    .title {
       font-size: 24px;
       color: @primary-color;
       margin-bottom: 10px;
     }
-    .list{}
+    .list {
+    }
 
-    .list-item{
+    .list-item {
       padding: 5px;
       border: 1px solid @border-color;
       border-radius: 5px;
       margin-bottom: 20px;
-      .avatar{
+      .avatar {
         margin: 0 auto 5px;
         width: 100%;
         height: 170px;
         background: center center no-repeat;
         background-size: cover;
       }
-      .name{
+      .name {
         font-size: 18px;
         color: @text-color;
       }
-      .info{
+      .info {
         .count-friends,
-        .count-animals{
+        .count-animals {
           width: 50%;
         }
-        .count-friends{
+        .count-friends {
           font-size: 14px;
           color: @highlight-color;
           float: left;
         }
-        .count-animals{
+        .count-animals {
           color: @primary-color;
           float: right;
           text-align: right;
@@ -66,10 +83,10 @@
       }
     }
   }
-  .currently.__cats{
-    .list-item{
+  .currently.__cats {
+    .list-item {
       border: none;
-      .name{
+      .name {
         color: @highlight-color;
       }
     }
