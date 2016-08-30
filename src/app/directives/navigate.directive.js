@@ -22,8 +22,9 @@
       scope.prev = {};
       scope.prev.page = parseInt(scope.page);
       scope.prev.userIndex = parseInt(scope.userIndex);
-      if ((scope.prev.page - 1 + scope.prev.userIndex) > 0) {
-        scope.prev.userIndex = scope.prev.userIndex - 1;
+
+      if (scope.prev.page + scope.prev.userIndex - 1) {
+        scope.prev.userIndex--;
         if (scope.prev.userIndex < 0) {
           scope.prev.page = scope.prev.page - 1;
           scope.prev.userIndex = config.itemPerPage - 1;
@@ -37,7 +38,7 @@
       scope.next.page = parseInt(scope.page);
       scope.next.userIndex = parseInt(scope.userIndex) + 1;
       if (scope.next.userIndex >= config.itemPerPage) {
-        scope.next.page = scope.next.page + 1;
+        scope.next.page++;
         scope.next.userIndex = 0;
       }
     }

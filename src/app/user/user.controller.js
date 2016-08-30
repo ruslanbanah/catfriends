@@ -20,7 +20,7 @@
         phone: $scope.selectUser.phone
       };
 
-      UserService.update($scope.selectUser._id, params)
+      UserService.updateUser($scope.selectUser._id, params)
           .then(function(res) {
                 console.log(res);
               },
@@ -33,7 +33,6 @@
 
     UserService.getUser($scope.page, $scope.userIndex).then(function(user) {
       $scope.selectUser = user;
-      $scope.$apply();
     });
   }
 
