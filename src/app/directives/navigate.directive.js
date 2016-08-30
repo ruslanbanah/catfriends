@@ -17,7 +17,7 @@
     };
     return directive;
 
-    function link(scope, element, attrs) {
+    function link(scope) {
       scope.prevShow = true;
       scope.prev = {};
       scope.prev.page = parseInt(scope.page);
