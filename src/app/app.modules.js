@@ -6,6 +6,7 @@
         'ui.router',
         'ui.bootstrap',
         'underscore',
-        'angular-loading-bar'
+        'angular-loading-bar',
+        'angularSpinner'
       ]);
 })();

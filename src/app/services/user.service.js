@@ -3,11 +3,13 @@
 
   angular.module('cats').factory('UserService', [
     '$http',
+    '$q',
+    'usSpinnerService',
     'config',
     UserService
   ]);
 
-  function UserService($http, config) {
+  function UserService($http, $q, usSpinnerService, config) {
     var cache = [];
     var oldPage = null;
     var selectUser = null;
@@ -17,12 +19,11 @@
     };
 
     return service;
-
-    ////////////
-
+    
     function getUser(page, userIndex) {
-      return new Promise(function(resolved, reject) {
+      return $q(function(resolved, reject) {
         if (oldPage != page) {
+          usSpinnerService.spin('spinner');
           $http({
             method: 'get',
             url: config.url + '/users',
@@ -33,6 +34,7 @@
                 oldPage = page;
                 selectUser = cache[userIndex];
                 selectUser.born = new Date(selectUser.born);
+                usSpinnerService.stop('spinner');
                 resolved(selectUser);
               },
               reject
