@@ -8,7 +8,7 @@
   function userProfile() {
     var directive = {
       link: link,
-      templateUrl: 'app/views/directives/userProfile.html',
+      templateUrl: 'app/views/directives/user.profile.html',
       restrict: 'E'
     };
     return directive;
