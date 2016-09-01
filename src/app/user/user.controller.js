@@ -28,7 +28,6 @@
                 console.log(err);
               }
           );
-      return false;
     };
 
     UserService.getUser($scope.page, $scope.userIndex).then(function(user) {
