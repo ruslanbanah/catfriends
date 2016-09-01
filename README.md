@@ -2,7 +2,7 @@
 CatFriends is a social network for meeting people who have cats.
 
 ## Install
-- `npm i`
+- `npm install`
 - `bower install`
 - `gulp serve`
 
