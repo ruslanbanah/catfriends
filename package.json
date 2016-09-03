@@ -19,6 +19,7 @@
   "devDependencies": {},
   "dependencies": {
     "autoprefixer": "^6.4.1",
+    "bower": "^1.7.9",
     "gulp": "^3.9.1",
     "gulp-csso": "^2.0.0",
     "gulp-livereload": "^3.8.1",

@@ -2,7 +2,6 @@ var gulp = require('gulp');
 var rename = require('gulp-rename');
 var assets  = require('postcss-assets');
 var autoprefixer = require('autoprefixer');
-var csso = require('gulp-csso');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
