@@ -12,6 +12,6 @@
         'background-image': 'url(' + url + ')',
         'background-size': 'cover'
       });
-    }
-  }
+    };
+  };
 })();

@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-
+  
   angular
       .module('cats', [
         'ui.router',
@@ -8,5 +8,9 @@
         'underscore',
         'angular-loading-bar',
         'angularSpinner'
-      ]);
+      ])
+      .run(function($log) {
+        $log.debug('run Cat friends.');
+      });
+
 })();

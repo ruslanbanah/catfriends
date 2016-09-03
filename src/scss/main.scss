@@ -1,3 +1,5 @@
+@import 'variables';
+
 .logo {
   margin-top: 20px;
 }
@@ -8,7 +10,7 @@
   .btn-prev {
     float: left;
     font-size: 24px;
-    color: @primary-color;
+    color: $primary-color;
     margin-bottom: 10px;
     cursor: pointer;
     text-decoration: none;
@@ -16,7 +18,7 @@
   .btn-next {
     float: right;
     font-size: 24px;
-    color: @primary-color;
+    color: $primary-color;
     margin-bottom: 10px;
     cursor: pointer;
     text-decoration: none;
@@ -25,11 +27,11 @@
 
 .profile-list {
   .btn-user-update{
-    color: @primary-color;
+    color: $primary-color;
 
     &:hover{
-      background-color: @primary-color;
-      color: @text-color;
+      background-color: $primary-color;
+      color: $text-color;
     }
   }
   .profile-currently {
@@ -45,7 +47,7 @@
   .currently {
     .title {
       font-size: 24px;
-      color: @primary-color;
+      color: $primary-color;
       margin-bottom: 10px;
     }
     .list {
@@ -53,8 +55,8 @@
 
     .list-item {
       padding: 5px;
-      border: 1px solid @border-color;
-      border-radius:@border-radiuses;
+      border: 1px solid $border-color;
+      border-radius: $border-radiuses;
       margin-bottom: 20px;
       .avatar {
         margin: 0 auto 5px;
@@ -65,7 +67,7 @@
       }
       .name {
         font-size: 18px;
-        color: @text-color;
+        color: $text-color;
       }
       .info {
         .count-friends,
@@ -74,11 +76,11 @@
         }
         .count-friends {
           font-size: 14px;
-          color: @highlight-color;
+          color: $highlight-color;
           float: left;
         }
         .count-animals {
-          color: @primary-color;
+          color: $primary-color;
           float: right;
           text-align: right;
         }
@@ -89,7 +91,7 @@
     .list-item {
       border: none;
       .name {
-        color: @highlight-color;
+        color: $highlight-color;
       }
     }
   }
