@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="text-center logo"><a href="#"><img src="http://146.185.137.61:3000/images/logo.png" alt="Logo"></a>
+    </div>
+    <navigate page="page" user-index="userIndex"></navigate>
+    <div class="profile-list">
+        <div class="row">
+            <div class="col-md-3">
+                <user-profile></user-profile>
+            </div>
+            <div class="col-md-9">
+                <div class="currently">
+                    <div class="title">Currently friends ({{selectUser.friends.length}})</div>
+                    <div class="list">
+                        <div class="row">
+                            <friends ng-repeat="friend in selectUser.friends" friend="{{friend}}"></friends>
+                        </div>
+                    </div>
+                </div>
+                <!--Currently cats-->
+                <div class="currently __cats">
+                    <div class="title">Currently cats ({{selectUser.cats.length}})</div>
+                    <div class="list">
+                        <div class="row">
+                            <cat ng-repeat="cat in selectUser.cats"></cat>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
